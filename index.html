@@ -1,734 +1,508 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/imgs/logo-orange.png" type="image/x-icon">
+    <title>PiyushKrRai</title>
+    <link rel="stylesheet" href="style.css">
 
-        <!--=============== FAVICON ===============-->
-        <link rel="shortcut icon" href="assets/img/logo-orange.png" type="image/x-icon">
-
-        <!--=============== REMIXICONS ===============-->
+     <!--=============== REMIXICONS ===============-->
         <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+<body>
+    <!-- 
+    ================================================================
+    NAVIGATION BAR
+    - Fixed top navigation with time display (hidden on mobile)
+    - Menu links with smooth scroll
+    - Social media icons
+    ================================================================
+    -->
+    <nav class="nav">
+        <div class="container nav-container">
+            <!-- Current time display (hidden on mobile) -->
+           
+            
+            <!-- Navigation menu links -->
+            <div class="nav-links">
+                <a href="#home" class="active">Home</a>
+                <!---<a href="#work">Work</a>--->
+                <a href="#events">Community</a>
+                <a href="#travel">Blogs</a>
+                <a href="#contact">Contact</a>
+            </div>
 
-        <!--=============== SWIPER CSS ===============-->
-        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-
-        <!--=============== CSS ===============-->
-        <link rel="stylesheet" href="assets/css/styles.css">
-
-        <title>PiyushKrRai</title>
-    </head>
-    <body>
-        <!--==================== HEADER ====================-->
-        <header class="header" id="header">
-            <nav class="nav container">
-                <a href="#" class="nav__logo">
-                    PiyushKrRai
+             <!---<div class="nav-time" id="current-time">00:00 IST</div>-->
+            
+            <!-- Social media icons -->
+            <div class="nav-social">
+                <a href="https://github.com/piyushkrai" target="_blank" aria-label="GitHub">
+                    <i class="ri-github-fill"></i>
                 </a>
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list grid">
-
-                        <li class="nav__item">
-                            <a href="#home" class="nav__link active-link">
-                                <i class="ri-home-5-line"></i> Home
-                            </a>
-                        </li>
-
-                        <li class="nav__item">
-                            <a href="#skills" class="nav__link">
-                                <i class="ri-trophy-line"></i> Skills
-                            </a>
-                        </li>
-
-                        <li class="nav__item">
-                            <a href="#qualification" class="nav__link">
-                                <i class="ri-book-open-line"></i> Qualification
-                            </a>
-                        </li>
-
-                        <!---<li class="nav__item">
-                            <a href="#services" class="nav__link">
-                                <i class="ri-briefcase-line"></i> Services
-                            </a>
-                        </li>--->
-
-                        <li class="nav__item">
-                            <a href="#projects" class="nav__link">
-                                <i class="ri-image-line"></i> Projects
-                            </a>
-                        </li>
-
-                        <li class="nav__item">
-                            <a href="#contact" class="nav__link">
-                                <i class="ri-chat-3-line"></i> Contact
-                            </a>
-                        </li>
-
-                        <li class="nav__item">
-                            <a href="https://gitlab.com/PiyushKrRai/resume/-/raw/main/ResumePiyushKrRai.pdf?ref_type=heads&inline=false" class="nav__link">
-                                <i class="ri-article-line"></i> Resume
-                            </a>
-                        </li>
-
-                    </ul>
-
-                    <!-- Close Button -->
-                    <div class="nav__close" id="nav-close">
-                        <i class="ri-close-line"></i>
-                    </div>
-
-                </div>
-
-                <div class="nav__buttons">
-                    <!-- Theme Change Button -->
-                    <i class="ri-moon-line change-theme" id="theme-button"></i>
-
-                    <!-- Toggle Button -->
-                    <div class="nav__toggle" id="nav-toggle">
-                        <i class="ri-menu-4-line"></i>
-                    </div>
-                </div>
-            </nav>
-        </header>
-
-        <!--==================== MAIN ====================-->
-        <main class="main">
-            <!--==================== HOME ====================-->
-            <section class="home section" id="home">
-                <div class="home__container container grid section__border">
-                    <div class="home__data grid">
-                        <h1 class="home__title">
-                            <div class="home__subtitle">Hello, I'm </div>Piyush Kumar Rai <br>
-                            <div class="home__subtitle">A Passionate&nbsp;Coder, Upcoming&nbsp;Engineer and Tech&nbsp;Enthusiast<br>
-                            <h3 class="home__arch">I use Arch, BTW</h3><br>
-                            </div>
-                        </h1>
-
-                        <div class="home__blob grid">
-                            <div class="home__perfil">
-                                <img src="./assets/img/user.png" alt="home perfil" >
-                            </div>
-
-                            <img src="./assets/img/shape-wawes.svg" alt="" class="home__shape-wawes" >
-                            <img src="./assets/img/shape-circle.svg" alt="" class="home__shape-circle">
-                        </div>
-
-                        <ul class="home__social">
-                            <a href="https://www.linkedin.com/in/piyushkrrai" target="_blank" class="home__social-link">
-                                <i class="ri-linkedin-box-line"></i>
-                            </a>
-                            <a href="https://github.com/PiyushKrRai/" target="_blank" class="home__social-link">
-                                <i class="ri-github-line"></i>
-                            </a>
-                            <a href="https://gitlab.com/PiyushKrRai/" target="_blank" class="home__social-link">
-                                <i class="ri-gitlab-line"></i>
-                            </a>
-                            <a href="https://twitter.com/piyushkrrai" target="_blank" class="home__social-link">
-                                <i class="ri-twitter-x-line"></i>
-                            </a>
-                        </ul>
-                    </div>
-
-                    <!--==================== HOME Info 1 ====================-->
-                    <div class="home__info">
-                        <div>
-                            <h3 class="home__info-title">
-                                ABOUT ME
-                            </h3>
-                            <p class="home__info-description">
-                                Welcome to my personal corner of the web! 
-                                I'm a 21-year-old tech enthusiast and engineer currently pursuing my Bachelors Degree in Computer Science and Engineering. My passion lies in discovering and learning new technologies, and I am somewhat of a hardcore Linux user and fanboy.
-                                <br><br>
-                                Beyond coding, I love traveling, enjoying a good cup of coffee, and spending time with dogs. Join me on this journey as I explore the vast world of technology and innovation!
-                            </p>
-                        </div>
-
-                        <!---<div>
-                            <h3 class="home__info-title">
-                                CONTACT
-                            </h3>
-                            <p class="home__info-description">
-                                Dallas, Texas <br>
-                                Piyush Kr Rai@gmail.com <br>
-                                (972) 741-8455 <br>
-                            </p>
-                        </div>
-
-                        <div>
-                            <h3 class="home__info-title">
-                                SERVICES
-                            </h3>
-                            <p class="home__info-description">
-                                Website Design
-                            </p>
-                        </div>--->
-
-                    </div>
-
-                    <!--==================== HOME Info 2 ====================-->
-                    <div class="home__info">
-                        <div>
-                            <h3 class="home__info-title">
-                                YEARS OF EXPERIENCE
-                            </h3>
-                            <p class="home__info-number">
-                                05+
-                            </p>
-                        </div>
-
-                        <div>
-                            <h3 class="home__info-title">
-                                COMPLETED PROJECTS
-                            </h3>
-                            <p class="home__info-number">
-                                05+
-                            </p>
-                        </div>
-
-                        <div>
-                            <h3 class="home__info-title">
-                                COMPANIES WORKED
-                            </h3>
-                            <p class="home__info-number">
-                                01+
-                            </p>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-
-            <!--==================== SKILLS ====================-->
-            <section class="skills section" id="skills">
-                <h2 class="section__title">Skills</h2>
-                <span class="section__subtitle">My favorite skills</span>
-
-                <div class="skills__container grid section__border">
-                    <!--==================== SKILLS 1 ====================-->
-                    <div class="skills__content">
-                        <!---<h3 class="skills__title">
-                         Data Engineer
-                        </h3>--->
-                        <div class="skills__info">
-                            <div class="skills__data">
-                                <div class="skills__blob">
-                                    <i class="skills__icon nf nf-md-language_rust"></i>
-                                    <!---<img src="assets/img/data_modelling.webp" alt="skills image ">--->
-                                </div>
-                                <h3 class="skills__name">Rust</h3>
-                                <span class="skills_subtitle"> Intermediate</span>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__blob">
-                                    <i class="skills__icon nf nf-fa-linux"></i>
-                                    <!---<img src="assets/img/data_modelling.webp" alt="skills image ">--->
-                                </div>
-                                <h3 class="skills__name">Linux</h3>
-                                <span class="skills_subtitle"> Intermediate</span>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__blob">
-                                    <i class="skills__icon nf nf-dev-java"></i>
-                                    <!---<img src="assets/img/data_modelling.webp" alt="skills image ">--->
-                                </div>
-                                <h3 class="skills__name">Java</h3>
-                                <span class="skills_subtitle">Advanced</span>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__blob">
-                                    <i class="skills__icon nf nf-custom-c"></i>
-                                    <!---<img src="assets/img/data_modelling.webp" alt="skills image ">--->
-                                </div>
-                                <h3 class="skills__name">C Programming</h3>
-                                <span class="skills_subtitle">Advanced</span>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__blob">
-                                    <i class="skills__icon nf nf-dev-python"></i>
-                                    <!---<img src="assets/img/data_modelling.webp" alt="skills image ">--->
-                                </div>
-                                <h3 class="skills__name">Python</h3>
-                                <span class="skills_subtitle">Advanced</span>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__blob">
-                                    <i class="skills__icon nf nf-cod-terminal_bash"></i>
-                                    <!---<img src="assets/img/data_modelling.webp" alt="skills image ">--->
-                                </div>
-                                <h3 class="skills__name">Bash Shell</h3>
-                                <span class="skills_subtitle">Intermediate</span>
-                            </div>
-
-                        </div>
-                     </div>
-
-
-                     <!--==================== SKILLS 1 ====================-->
-                    <div class="skills__content">
-                        <!---<h3 class="skills__title">
-                         Data Engineer
-                        </h3>--->
-                        <div class="skills__info">
-
-                            <div class="skills__data">
-                                <div class="skills__blob">
-                                    <i class="skills__icon nf nf-md-nix"></i>
-                                    <!---<img src="assets/img/data_modelling.webp" alt="skills image ">--->
-                                </div>
-                                <h3 class="skills__name">Nix</h3>
-                                <span class="skills_subtitle">Intermediate</span>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__blob">
-                                    <i class="skills__icon nf nf-dev-git"></i>
-                                    <!---<img src="assets/img/data_modelling.webp" alt="skills image ">--->
-                                </div>
-                                <h3 class="skills__name">Git</h3>
-                                <span class="skills_subtitle">Advanced</span>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__blob">
-                                    <i class="skills__icon nf nf-linux-inkscape"></i>
-                                    <!---<img src="assets/img/data_modelling.webp" alt="skills image ">--->
-                                </div>
-                                <h3 class="skills__name">Graphic Design</h3>
-                                <span class="skills_subtitle">Intermediate</span>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__blob">
-                                    <i class="skills__icon nf nf-dev-html5"></i>
-                                    <!---<img src="assets/img/data_modelling.webp" alt="skills image ">--->
-                                </div>
-                                <h3 class="skills__name">HTML</h3>
-                                <span class="skills_subtitle">Advanced</span>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__blob">
-                                    <i class="skills__icon nf nf-dev-css3"></i>
-                                    <!---<img src="assets/img/data_modelling.webp" alt="skills image ">--->
-                                </div>
-                                <h3 class="skills__name">CSS</h3>
-                                <span class="skills_subtitle">Advanced</span>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__blob">
-                                    <i class="skills__icon nf nf-dev-javascript_shield"></i>
-                                    <!---<img src="assets/img/data_modelling.webp" alt="skills image ">--->
-                                </div>
-                                <h3 class="skills__name">Javascript</h3>
-                                <span class="skills_subtitle">Advanced</span>
-                            </div>
-
-                        </div>
-                     </div>                     
-
-                </div>
-
-            </section>
-
-            <!--==================== QUALIFICATION ====================-->
-            <section class="qualification section" id="qualification">
-                <h2 class="section__title">Qualification</h2>
-                <span class="section__subtitle">Experience & Education</span>
-
-                <div class="qualification__container container grid section__border">
-                    <!--====================== QUALIFICATION 1 ===================-->
-                    <div class="qualification__content">
-                        <h3 class="qualification__title">
-                            <i class="ri-pencil-ruler-2-line"></i> Education
-                        </h3>
-                        <div class="qualification__info">
-
-                            <div>
-                                <h3 class="qualification__name">
-                                    B.Tech in Computer Science Engineering
-                                </h3>
-                                <span class="qualification__country">University of Engineering and Management, Jaipur</span>
-                                <span class="qualification__year">Graduation: 2026</span>
-                            </div>
-
-                            <div>
-                                <h3 class="qualification__name">
-                                    <a href="https://drive.google.com/file/d/15W6BCUvZkzWkG5yhZwHCfQHUxAz7gYiF/view?usp=sharing">Course: Introduction to Programming in C</a>
-                                </h3>
-                                <span class="qualification__country">SWAYAM - NPTEL</span>
-                                <span class="qualification__year">Mar 2024</span>
-                            </div>
-
-                            <div>
-                                <h3 class="qualification__name">
-                                    <a href="https://drive.google.com/file/d/1igx4ER6WOuk7aw60uJmFxSPl3MRHCz3c/view?usp=sharing">Problem Solving through Programming in C</a>
-                                </h3>
-                                <span class="qualification__country">SWAYAM - NPTEL</span>
-                                <span class="qualification__year">Mar 2024</span>
-                            </div>
-
-                            <div>
-                                <h3 class="qualification__name">
-                                    <a href="https://drive.google.com/file/d/1NIq0CY6nF-5V59P-UqDB_WTIvzSCSEAz/view?usp=sharing">Joy of Computing using Python</a>
-                                </h3>
-                                <span class="qualification__country">SWAYAM - NPTEL</span>
-                                <span class="qualification__year">Mar 2024</span>
-                            </div>
-
-                            <div>
-                                <h3 class="qualification__name">
-                                    ICSE (X) & ISC (XII)
-                                </h3>
-                                <span class="qualification__country">Central Modern School, Kolkata</span>
-                                <span class="qualification__year">2020 - 2022</span>
-                            </div>
-
-                        </div>
-                    </div>
-                    <!--====================== QUALIFICATION 2 ===================-->
-                    <div class="qualification__content">
-                        <h3 class="qualification__title">
-                            <i class="ri-briefcase-4-line"></i></i> Experience
-                        </h3>
-                        <div class="qualification__info">
-                            <div>
-                                <h3 class="qualification__name">
-                                    Vice President
-                                </h3>
-                                <span class="qualification__country"><a href="https://acm-uemj.uem.edu.in">UEMJ ACM Student Chapter</a></span>
-                                <span class="qualification__year">2024 - Present</span>
-                            </div>
-
-                            <div>
-                                <h3 class="qualification__name">
-                                    Core Organizer
-                                </h3>
-                                <span class="qualification__country"><a href="https://acehack.uem.edu.in">AceHack 3.0 - Rajasthan's Largest 24 Hour Hackathon</a></span>
-                                <span class="qualification__year">2023 - Present</span>
-                            </div>
-
-                            <div>
-                                <h3 class="qualification__name">
-                                    Technical Head
-                                </h3>
-                                <span class="qualification__country"><a href="https://tss.uem.edu.in">The Speech Society</a></span>
-                                <span class="qualification__year">2023 - Present</span>
-                            </div>
-
-                            <div>
-                                <h3 class="qualification__name">
-                                    Technical Team
-                                </h3>
-                                <span class="qualification__country">Google Developer Student Clubs</span>
-                                <span class="qualification__year">2023 - Present</span>
-                            </div>
-
-                            <div>
-                                <h3 class="qualification__name">
-                                    Core Member
-                                </h3>
-                                <span class="qualification__country">Entrepreneurship Cell</span>
-                                <span class="qualification__year">2023 - Present</span>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-                <img src="assets/img/shape-circle.svg" alt="qualification image" class="qualification__img">
-            </section>
-
-            <!--==================== SERVICES ====================-->
-            <!---<section class="services section" id="services">
-                <h2 class="section__title">Services</h2>
-                <span class="section__subtitle">What I offer</span>
-
-                <div class="services__container container grid section__border">
-                    <div class="services__card">
-                        <i class="ri-layout-4-line"></i>
-
-                        <h2 class="services__title">
-                            UI/UX <br>
-                            Designer
-                        </h2>
-
-                        <p class="services description">
-                            Service that provides the best quality and at the request of the client, with professional work and customer support
-                        </p>
-
-                        <div class="services__border"></div>
-                    </div>
-
-                    <div class="services__card">
-                        <i class="ri-code-line"></i>
-
-                        <h2 class="services__title">
-                            Website <br>
-                            Design
-                        </h2>
-
-                        <p class="services description">
-                            Service that provides the best quality and at the request of the client, with professional work and customer support
-                        </p>
-
-                        <div class="services__border"></div>
-                    </div>
-
-                    <div class="services__card">
-                        <i class="ri-quill-pen-line"></i>
-
-                        <h2 class="services__title">
-                            Digital <br>
-                            Animator
-                        </h2>
-
-                        <p class="services description">
-                            Service that provides the best quality and at the request of the client, with professional work and customer support
-                        </p>
-
-                        <div class="services__border"></div>
-                    </div>
-
-                </div>
-            </section>--->
-
-            <!--==================== PROJECTS ====================-->
-            <section class="projects section" id="projects">
-                <h2 class="section__title">Projects</h2>
-                <span class="section__subtitle">Most recent work</span>
-
-                <div class="container section__border">
-                    <div class="projects__container swiper">
-                        <div class="swiper-wrapper">
-                            <!-- Project 1 -->
-                            <div class="projects__content swiper-slide">
-                                <img src="assets/img/portfolio-1.png" alt="projects image" class="projects__img">
-
-                                <div>
-                                    <span class="projects__subtitle">Web Developement</span>
-                                    <h1 class="projects__title">Portfolio Design</h1>
-
-                                    <a href="https://piyushkrrai.github.io/Portfolio-1/" class="projects__button">
-                                        View demo <i class="ri-arrow-right-line"></i>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <!-- Project 2 -->
-                            <div class="projects__content swiper-slide">
-                                <img src="assets/img/collegeconnect.png" alt="projects image" class="projects__img">
-
-                                <div>
-                                    <span class="projects__subtitle">Web App Developement</span>
-                                    <h1 class="projects__title">College Connect Application</h1>
-                                    <a href="https://drive.google.com/file/d/1BBYDbE1xkFUZGJlsh_IYUoO9cvkwjYSK/view?usp=sharing" class="projects__button">
-                                        View demo <i class="ri-arrow-right-line"></i>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <!-- Project 3 -->
-                            <div class="projects__content swiper-slide">
-                                <img src="assets/img/merch.png" alt="projects image" class="projects__img">
-
-                                <div>
-                                    <span class="projects__subtitle">Design</span>
-                                    <h1 class="projects__title">T-Shirt Design</h1>
-
-                                    <a href="#" class="projects__button">
-                                        View demo <i class="ri-arrow-right-line"></i>
-                                    </a>
-                                </div>
-                            </div>
-
-                             <!-- Project 4 -->
-                             <div class="projects__content swiper-slide">
-                                <img src="assets/img/portfolio-2.png" alt="projects image" class="projects__img">
-
-                                <div>
-                                    <span class="projects__subtitle">Design</span>
-                                    <h1 class="projects__title">Portfolio Design </h1>
-                                    <a href="https://piyushkrrai.github.io/portfolio-2/" class="projects__button">
-                                        View demo <i class="ri-arrow-right-line"></i>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <!-- Project 5 -->
-                            <div class="projects__content swiper-slide">
-                                <img src="assets/img/tssuemj.png" alt="projects image" class="projects__img">
-
-                                <div>
-                                    <span class="projects__subtitle">Web Developement</span>
-                                    <h1 class="projects__title">Company Website</h1>
-
-                                    <a href="https://tss.uem.edu.in" class="projects__button">
-                                        View demo <i class="ri-arrow-right-line"></i>
-                                    </a>
-                                </div>
-                            </div>                            
-
-                        </div>
-
-                        <!-- Swiper arrows -->
-                        <div class="swiper-button-next">
-                            <i class="ri-arrow-right-s-line"></i>
-                        </div>
-                        <div class="swiper-button-prev">
-                            <i class="ri-arrow-left-s-line"></i>
-                        </div>
-
-                        <!-- Swiper pagination -->
-                        <div class="swiper-pagination"></div>
-                    </div>
-                </div>
-            </section>
-
-            <!--==================== TESTIMONIAL ====================-->
-            <!---<section class="testimonial section">
-
-            </section>--->
-
-            <!--==================== CONTACT ====================-->
-            <section class="contact section" id="contact">
-                <h2 class="section__title">Contact Me</h2>
-                <span class="section__subtitle">Get in touch</span>
-                <div class="contact__container container grid section__border">
-                    <div class="contact__content">
-                        <h3 class="contact__title">
-                            <i class="ri-chat-3-line"></i> Reach Out
-                        </h3>
-                        <div class="contact__info">
-                            <div class="contact__data">
-                                <span class="contact__data-title">Email</span>
-                                <span class="contact__data-info">raip7172@gmail.com</span>
-                                <a href="mailto:raip7172@gmail.com" target="_blank" class="contact__button">
-                                    Write me <i class="ri-arrow-right-line"></i>
-                                </a>
-                            </div>
-
-                            <div class="contact__data">
-                                <span class="contact__data-title">Telegram</span>
-                                <span class="contact__data-info">t.me/PiyushKrRai</span>
-                                <a href="https://t.me/piyushkrrai" target="_blank" class="contact__button">
-                                    Write me <i class="ri-arrow-right-line"></i>
-                                </a>
-                            </div>
-
-                            <div class="contact__data">
-                                <span class="contact__data-title">Linkedin</span>
-                                <span class="contact__data-info">PiyushKrRai</span>
-                                <a href="https://www.linkedin.com/in/piyushkrrai" target="_blank" class="contact__button">
-                                    Write me <i class="ri-arrow-right-line"></i>
-                                </a>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <!---<div class="contact__content">
-                        <h3 class="contact__title">
-                            <i class="ri-send-place-line"></i> Write me your project
-                        </h3>
-
-                        <form action="" class="contact__form" id="contactform">
-                            <div class="contact__form-div">
-                                <label class="contact__form-tag">Name</label>
-                                <input type="text" name="user_name" id="contact-name" required placeholder="Write your name" class="contact__form-input">
-                            </div>
-                            <div class="contact__form-div">
-                                <label class="contact__form-tag">Mail</label>
-                                <input type="text" name="user_email" id="contact-email" required placeholder="Write your email" class="contact__form-input">
-                            </div>
-                            <div class="contact__form-div">
-                                <label class="contact__form-tag">Project</label>
-                                <textarea type="text" name="user_project" id="contact-project" required placeholder="Write your project" class="contact__form-input"></textarea>
-                            </div>
-
-                            <p class="contact__message" id="contact-message">Message</p>
-
-                            <button class="contact__button" type="submit">
-                                Submit <i class="ri-arrow-right-up-line"></i>
-                            </button>
-                        </form>
-                    </div>--->
-                </div>
-            </section>
-        </main>
-
-        <!--==================== FOOTER ====================-->
-        <footer class="footer">
-            <div class="footer__container container">
-                <h1 class="footer__title">Piyush Kr Rai </h1>
-                <p></p>
-
-                <ul class="footer__list">
-                    <li>
-                        <a href="#home" class="footer__link">Home</a>
-                    </li>
-                    <li>
-                        <a href="#skills" class="footer__link">Skills</a>
-                    </li>
-                    <li>
-                        <a href="#projects" class="footer__link">Projects</a>
-                    </li>
-                </ul>
-
-                <ul class="footer__social">
-
-                    <a href="https://www.linkedin.com/in/piyushkrrai" target="_blank" class="footer__social-link">
-                        <i class="ri-linkedin-box-line"></i>
-                    </a>
-                    <a href="https://github.com/PiyushKrRai/" target="_blank" class="footer__social-link">
-                        <i class="ri-github-line"></i>
-                    </a>
-                    <a href="https://gitlab.com/PiyushKrRai/" target="_blank" class="footer__social-link">
-                        <i class="ri-gitlab-line"></i>
-                    </a>
-                    <a href="https://twitter.com/piyushkrrai" target="_blank" class="footer__social-link">
-                        <i class="ri-twitter-x-line"></i>
-                    </a>
-                    <a href="https://instagram.com/piyushkrrai" target="_blank" class="footer__social-link">
-                        <i class="ri-instagram-line"></i>
-                    </a>
-                    <a href="https://youtube.com/piyushkrrai" target="_blank" class="footer__social-link">
-                        <i class="ri-youtube-line"></i>
-                    </a>
-
-
-                </ul>
-
-                <span class="footer__copy">
-                    &#169; Copyright Piyush Kr Rai. All rights reserved
-                </span>
+                <a href="https://www.linkedin.com/in/piyushkrrai" target="_blank" aria-label="GitHub">
+                    <i class="ri-linkedin-box-fill"></i>
+                </a>
+
+                <a href="https://twitter.com/piyushkrrai" target="_blank" aria-label="GitHub">
+                    <i class="ri-twitter-x-fill"></i>
+                </a>
+
+                <a href="https://instagram.com/piyushkrrai" target="_blank" aria-label="GitHub">
+                    <i class="ri-instagram-fill"></i>
+                </a>
+
+                <a href="https://youtube.com/piyushkrrai" target="_blank" aria-label="GitHub">
+                    <i class="ri-youtube-fill"></i>
+                </a>
+
+                <a href="https://piyushkrrai.hashnode.dev/" target="_blank" aria-label="GitHub">
+                    <i class="ri-news-fill"></i>
+                </a>
+
+                <a href="https://gitlab.com/PiyushKrRai/" target="_blank" aria-label="GitHub">
+                    <i class="ri-gitlab-fill"></i>
+                </a>    
             </div>
-        </footer>
+        </div>
+    </nav>
+
+    <!-- 
+    ================================================================
+    HERO SECTION
+    - Main introduction with name, role, and profile image
+    - Corner bracket accents for visual interest
+    - Two-column layout: text left, image right
+    ================================================================
+    -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <!-- Hero text content -->
+                <div class="hero-text">
+                    <!-- Decorative corner brackets -->
+                    <div class="corner-accent top-left"></div>
+                    <div class="corner-accent top-right"></div>
+                    
+                    <h1 class="name">Piyush Kumar Rai</h1>
+                    <p class="role">Blockchain | DevOps | Open Source Engineer</p>
+                    <p class="email">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        piyushkrrai03@gmail.com
+                    </p>
+                    <p class="identity">I build resilient systems, explore cloud infrastructure, and share what I learn with the community.</p>
+                    
+                    <!-- Bottom corner brackets -->
+                    <div class="corner-accent bottom-left"></div>
+                    <div class="corner-accent bottom-right"></div>
+                </div>
+                
+                <!-- Hero profile image with border effect -->
+                <div class="hero-visual">
+                    <div class="profile-container">
+                        <div class="profile-image">
+                            <img src="assets/imgs/baldie.jpg" alt="Profile">
+                        </div>
+                        <!-- Offset border for visual depth -->
+                        <div class="profile-border"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 
+    ================================================================
+    ABOUT SECTION
+    - Personal philosophy and background
+    - Two-column layout with workspace image
+    ================================================================
+    -->
+    <section class="about">
+        <div class="container">
+            <h2><span class="section-number">01.</span> <span class="section-accent">About</span> Me</h2>
+            <div class="about-grid">
+                <!-- About text content -->
+                <div class="about-content">
+                    <p>I’m a Computer Science undergraduate who enjoys building things that actually get used. I like working close to the problem—understanding why something needs to exist before deciding how to build it. I’m a Linux enthusiast (I use Fedora, btw 🎩) 
+                        </p>
+                    <p>Beyond code, I care deeply about people and communities. I’ve spent the last few years building and supporting tech communities—organising hackathons and events, mentoring teams, and helping others get started. <br> So far, I’ve worked as a <b>Hackathon Organiser (x7), Hackathon Mentor (x4), and organised 50+ tech events across 10+ cities.</b>
+                        </p>
+                </div>
+                
+                <!-- Workspace/setup image -->
+                <div class="about-image">
+                    <img src="assets/imgs/mcoffice.jpeg" alt="Working setup">
+                    <div class="image-caption">Conducting AceHack 4.0 Roadshow at Microsoft Office, Gurugram</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 
+    ================================================================
+    FEATURED PROJECTS SECTION
+    - Showcase of key projects
+    - Visual cards with images, descriptions, tech stack, and links
+    - Hover effects for interactivity
+    ================================================================
+    -->
+    <!---<section class="featured-projects" id="work">
+        <div class="container">
+            <h2><span class="section-number">02.</span> <span class="section-accent">Featured</span> Projects</h2>
+            <div class="projects-grid">
+                <!-- Project Card 1: CloudOps Dashboard --
+                <div class="project-card">
+                    <!-- Project preview image --
+                    <div class="project-image">
+                        <img src="assets/imgs/ublue.png" alt="Kubernetes Dashboard">
+                        <div class="project-overlay">
+                            <span class="view-project">View Project →</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Project details --
+                    <div class="project-content">
+                        <h3>Custom UBlue OS image</h3>
+                        <p>A personalized UBlue OS image with custom packages, sane defaults, and system tweaks designed to stay fast, clean, and reproducible.</p>
+                        
+                        <!-- Technology tags --
+                        <div class="project-tags">
+                            <span>Linux</span>
+                            <span>Github</span>
+                            <span>CI/CD</span>
+                            <span>Cloud Ops</span>
+                        </div>
+                        
+                        <!-- Project links --
+                        <div class="project-links">
+                        <!---    <a href="#" class="project-link">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                                Live Demo
+                            </a>--
+
+                            <a href="https://github.com/PiyushKrRai/VaderOS" class="project-link">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                </svg>
+                                View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 2: AutoDeploy Pipeline --
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&h=400&fit=crop" alt="CI/CD Pipeline">
+                        <div class="project-overlay">
+                            <span class="view-project">View Project →</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>AutoDeploy Pipeline</h3>
+                        <p>Zero-downtime deployment system using GitHub Actions and AWS. Automated testing, building, and deployment for microservices architecture.</p>
+                        <div class="project-tags">
+                            <span>GitHub Actions</span>
+                            <span>AWS</span>
+                            <span>Docker</span>
+                            <span>Terraform</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                                Live Demo
+                            </a>
+                            <a href="#" class="project-link">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                </svg>
+                                View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+                --->
+    <!-- 
+    ================================================================
+    EXPERIENCE SECTION
+    - Professional work history
+    - Timeline layout with role details
+    ================================================================
+    -->
+    <section class="experience">
+        <div class="container">
+            <h2><span class="section-number">02.</span> <span class="section-accent">Professional</span> Experience</h2>
+            <div class="timeline">
+
+                <!-- Role 1: Platform Engineering Intern -->
+                <div class="role">
+                    <div class="role-header">
+                        <h3>Blockchain Developer</h3>
+                        <span class="duration">2024 – 2025</span>
+                    </div>
+                    <p class="organization">Open Source</p>
+                    <ul class="bullets">
+                        <li>Mentored 3 national-level hackathons as a developer, guiding teams on blockchain architecture, tooling, and best practices</li>
+                        <li>Experienced in collaborating with cross-functional teams to ship secure, scalable, and maintainable decentralized solutions</li>
+                    </ul>
+                </div>
+
+                <!-- Role 1: Platform Engineering Intern -->
+                <div class="role">
+                    <div class="role-header">
+                        <h3>Lead Organiser</h3>
+                        <span class="duration">2024 – 2025</span>
+                    </div>
+                    <p class="organization">AceHack - Rajasthan’s largest 36 hour hackathon <a href="https://acehack.uem.edu.in"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg></a></p>
+                    <ul class="bullets">
+                        <li>Lead the organizing team of Rajasthan’s largest 36 hour hackathon with 800+ participants and 250+ teams</li>
+                        <li>Organised 7 hackathon in a span of two years</li>
+                        <li>Created one of India's largest student tech communities</li>
+                    </ul>
+                </div>
 
 
-        <!--========== SCROLL UP ==========-->
-        <a href="#" class="scrollup" id="scroll-up">
-            <i class="ri-arrow-up-line"></i>
-        </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 
+    ================================================================
+    COMMUNITY & EVENTS SECTION
+    - Hackathons, workshops, and community activities
+    - Grid layout with event cards (now with background images)
+    ================================================================
+    -->
+    <section class="community" id="events">
+        <div class="container">
+            <h2><span class="section-number">03 .</span> <span class="section-accent">Community</span> & Events</h2>
+            <div class="content">
+                <p class="intro">I organize events because I believe the best way to learn is together. When someone shows up to a workshop unsure and leaves with something deployed, that exchange of energy matters.</p>
+                
+                <div class="events-grid">
+                    <!-- Event 1: CloudHacks 2024 -->
+                    <div class="event" style="background-image: url('assets/imgs/ace-event.jpg');">
+                        <a href="https://piyushkrrai.github.io/events">
+                        <div class="event-content">
+                            <div class="event-icon">🚀</div>
+                            <h3>AceHack 4.0</h3>
+                            <p class="event-role">Lead Organizer</p>
+                            <p class="event-detail">Organised AceHack 2025 Rajasthan’s largest 36 hour hackathon with 800+ participants and 250+ teams.</p>
+                        </div></a>
+                    </div>
+
+                    <!-- Event 2: DevOps Workshop Series -->
+                    <div class="event" style="background-image: url('assets/imgs/hack-event.jpg');">
+                        <a href="https://piyushkrrai.github.io/events">
+                        <div class="event-content">
+                            <div class="event-icon">⚙️</div>
+                            <h3>Hack Storm Hackathon</h3>
+                            <p class="event-role">Mentor and Speaker</p>
+                            <p class="event-detail">Got invitted as a Blockchain and DevOps Mentor and Speaker to Hack Storm 24hr Hackathon at JEC Kukas</p>
+                        </div></a>
+                    </div>
 
 
-        <!--=============== SCROLLREVEAL ===============-->
-        <script src="assets/js/scrollreveal.min.js"></script>
+                    <a href="https://piyushkrrai.github.io/events" class="event-button">
+                        Take a Look at other Events <i class="ri-corner-down-right-line"></i>
+                    </a>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <!--=============== SWIPER JS ===============-->
-        <script src="assets/js/swiper-bundle.min.js"></script>
+    <!-- 
+    ================================================================
+    JOURNEY SECTION
+    - Personal story and learning philosophy
+    - Two-column layout with image
+    ================================================================
+    -->
+    <!---<section class="journey" id="journey">
+        <div class="container">
+            <h2><span class="section-number">05.</span> <span class="section-accent">My</span> Journey</h2>
+            <div class="journey-content">
+                <!-- Journey narrative --
+                <div class="journey-text">
+                    <p>I didn't start with DevOps. I started with curiosity about why things worked—or didn't. In college, I was the person who'd break a Linux install trying to customize it, then spend hours fixing it. That loop of breaking, reading, fixing, and documenting became my learning method.</p>
 
-        <!--=============== EMAIL JS ===============-->
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+                    <p>At some point, I realized infrastructure was fascinating—not just servers and networks, but the thinking behind resilient systems. I started experimenting with Docker, then Kubernetes, then cloud providers. Every failure taught me something: why health checks matter, how DNS propagates, why you need backups of your backups.</p>
 
+                    <p>Writing and speaking came later. I started a blog to remember what I learned, and people started reading it. That led to giving talks, organizing workshops, and eventually running hackathons. Turns out explaining something to others is one of the best ways to actually understand it yourself.</p>
 
-        <!--=============== MAIN JS ===============-->
-        <script src="assets/js/main.js"></script>
-    </body>
+                    <p>Right now, I'm exploring platform engineering—building internal tools that make developers' lives easier. I'm also diving deeper into observability, because knowing what your system is doing is just as important as building it. And I'm still writing, still experimenting, still learning in public.</p>
+                </div>
+                
+                <!-- Supporting visual --
+                <div class="journey-visual">
+                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&h=600&fit=crop" alt="Learning and coding">
+                </div>
+            </div>
+        </div>
+    </section>-->
+
+    <!-- 
+    ================================================================
+    TRAVEL & PHOTOGRAPHY SECTION
+    - Curated image gallery
+    - Grid layout with hover overlays
+    ================================================================
+    -->
+    <section class="travel" id="travel">
+        <div class="container">
+            <h2><span class="section-number">04.</span> <span class="section-accent">Blogs</span> & Photography</h2>
+            <p class="section-intro">Observation matters. Whether debugging a system or exploring a new place, paying attention to details changes everything. Read my Travel Blogs, Tech Blogs or Connect on Instagram to see some of the Pictures I've clicked during my travels</p>
+            
+            <div class="travel-links-block">
+                    <a href="https://piyushkrrai.hashnode.dev/" class="travel-button">
+                        <i class="ri-cpu-line"></i>Tech Blog
+                    </a>
+                    <a href="https://medium.com/@piyushkrrai" class="travel-button">
+                        <i class="ri-map-2-line"></i>Travel Blog
+                    </a><a href="https://instagram.com/piyushkrrai" class="travel-button">
+                        <i class="ri-instagram-line"></i>Photography
+                    </a>
+                </div>
+            
+        </div>
+    </section>
+
+    <!-- 
+    ================================================================
+    TECH STACK SECTION
+    - Technologies and tools organized by category
+    - Interactive pill-style tags
+    ================================================================
+    -->
+    <section class="tech-stack">
+        <div class="container">
+            <h2><span class="section-number">07.</span> <span class="section-accent">Tech</span> Stack</h2>
+            <div class="stack-grid">
+                <!-- Languages -->
+                <div class="stack-category">
+                    <h3>Languages</h3>
+                    <div class="stack-pills">
+                        <span class="tech-pill">Python</span>
+                        <span class="tech-pill">JavaScript</span>
+                        <span class="tech-pill">Go</span>
+                        <span class="tech-pill">Bash</span>
+                    </div>
+                </div>
+                
+                <!-- Cloud & DevOps -->
+                <div class="stack-category">
+                    <h3>Cloud & DevOps</h3>
+                    <div class="stack-pills">
+                        <span class="tech-pill">AWS</span>
+                        <span class="tech-pill">GCP</span>
+                        <span class="tech-pill">Docker</span>
+                        <span class="tech-pill">Kubernetes</span>
+                        <span class="tech-pill">Terraform</span>
+                        <span class="tech-pill">Ansible</span>
+                        <span class="tech-pill">Jenkins</span>
+                        <span class="tech-pill">GitHub Actions</span>
+                        <span class="tech-pill">GitLab CI</span>
+                    </div>
+                </div>
+                
+                <!-- Tools & Platforms -->
+                <div class="stack-category">
+                    <h3>Tools & Platforms</h3>
+                    <div class="stack-pills">
+                        <span class="tech-pill">Git</span>
+                        <span class="tech-pill">Linux</span>
+                        <span class="tech-pill">Prometheus</span>
+                        <span class="tech-pill">Grafana</span>
+                        <span class="tech-pill">ELK Stack</span>
+                        <span class="tech-pill">Nginx</span>
+                        <span class="tech-pill">PostgreSQL</span>
+                        <span class="tech-pill">Redis</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 
+    ================================================================
+    CONTACT / FOOTER SECTION
+    - Contact information and links
+    - Styled contact buttons
+    - Footer credits
+    ================================================================
+    -->
+    <footer class="contact" id="contact">
+        <div class="container">
+            <div class="contact-content">
+                <!-- Contact text with corner accents -->
+                <div class="contact-text">
+                    <div class="corner-accent-footer top-left"></div>
+                    <h2>Let's Connect</h2>
+                    <p class="closing">If you want to talk about infrastructure, community building, or just share what you're working on, reach out.</p>
+                    <p class="cta-text">Want to bounce ideas? <span class="highlight">I'm all ears.</span></p>
+                    <p class="cta-text">Looking to build something? <span class="highlight">Let's collaborate.</span></p>
+                    <p class="cta-text">In the neighborhood? <span class="highlight">Coffee's on me.</span></p>
+                    <div class="corner-accent-footer bottom-right"></div>
+                </div>
+                
+                <!-- Contact buttons -->
+                <div class="contact-links-block">
+                    <a href="mailto:piyushkrrai03@gmail.com" class="contact-button">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        Send Email
+                    </a>
+                    <a href="https://github.com/piyushkrai" target="_blank" class="contact-button">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                        </svg>
+                        View GitHub
+                    </a>
+                    <a href="https://linkedin.com/in/piyushkrai" target="_blank" class="contact-button">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                        Connect on LinkedIn
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Footer credits -->
+            <div class="footer-bottom">
+                
+                <p class="footer-quote">"Intelligence is the ability to avoid doing work, yet getting the work done."</p>
+                <p class="footer-note">&#169; PiyushKrRai. All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for interactions -->
+    <script src="script.js"></script>
+</body>
 </html>
