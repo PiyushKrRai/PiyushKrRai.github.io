@@ -302,6 +302,37 @@ document.addEventListener('DOMContentLoaded', () => {
        ============================================================ */
     console.log('%c✓ Portfolio initialized successfully', 
         'color: #00ff00; font-size: 12px; font-weight: bold;');
+
+
+
+/*THEME TOGGLE FUNCTION ,switches between light and dark mode*/
+const themeToggle = document.getElementById('theme-toggle');
+const body = document.body;
+const themeIcon = themeToggle.querySelector('i');
+
+//default to dark here
+const currentTheme = localStorage.getItem('theme') || 'dark';
+if (currentTheme === 'light') {
+    body.classList.add('light-theme');
+    themeIcon.classList.remove('ri-sun-line');
+    themeIcon.classList.add('ri-moon-line');
+}
+
+// Toggle theme on button click will appear
+themeToggle.addEventListener('click', () => {
+    body.classList.toggle('light-theme');
+    
+    // Updated icon
+    if (body.classList.contains('light-theme')) {
+        themeIcon.classList.remove('ri-sun-line');
+        themeIcon.classList.add('ri-moon-line');
+        localStorage.setItem('theme', 'light');
+    } else {
+        themeIcon.classList.remove('ri-moon-line');
+        themeIcon.classList.add('ri-sun-line');
+        localStorage.setItem('theme', 'dark');
+    }
+});
 });
 
 /* ============================================================
